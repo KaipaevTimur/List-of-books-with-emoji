@@ -13,6 +13,9 @@
 		849B7E882858BD09000F89AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849B7E862858BD09000F89AD /* Main.storyboard */; };
 		849B7E8A2858BD0A000F89AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849B7E892858BD0A000F89AD /* Assets.xcassets */; };
 		849B7E8D2858BD0A000F89AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849B7E8B2858BD0A000F89AD /* LaunchScreen.storyboard */; };
+		849B7E952858CD95000F89AD /* ListBookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B7E942858CD95000F89AD /* ListBookTableViewController.swift */; };
+		849B7E972858D416000F89AD /* ListBookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B7E962858D416000F89AD /* ListBookTableViewCell.swift */; };
+		849B7E992858E590000F89AD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B7E982858E590000F89AD /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		849B7E892858BD0A000F89AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		849B7E8C2858BD0A000F89AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		849B7E8E2858BD0A000F89AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		849B7E942858CD95000F89AD /* ListBookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBookTableViewController.swift; sourceTree = "<group>"; };
+		849B7E962858D416000F89AD /* ListBookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBookTableViewCell.swift; sourceTree = "<group>"; };
+		849B7E982858E590000F89AD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				849B7E822858BD09000F89AD /* SceneDelegate.swift */,
 				849B7E842858BD09000F89AD /* ViewController.swift */,
 				849B7E862858BD09000F89AD /* Main.storyboard */,
+				849B7E982858E590000F89AD /* Model.swift */,
+				849B7E942858CD95000F89AD /* ListBookTableViewController.swift */,
+				849B7E962858D416000F89AD /* ListBookTableViewCell.swift */,
 				849B7E892858BD0A000F89AD /* Assets.xcassets */,
 				849B7E8B2858BD0A000F89AD /* LaunchScreen.storyboard */,
 				849B7E8E2858BD0A000F89AD /* Info.plist */,
@@ -140,7 +149,10 @@
 			files = (
 				849B7E852858BD09000F89AD /* ViewController.swift in Sources */,
 				849B7E812858BD09000F89AD /* AppDelegate.swift in Sources */,
+				849B7E952858CD95000F89AD /* ListBookTableViewController.swift in Sources */,
+				849B7E992858E590000F89AD /* Model.swift in Sources */,
 				849B7E832858BD09000F89AD /* SceneDelegate.swift in Sources */,
+				849B7E972858D416000F89AD /* ListBookTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
