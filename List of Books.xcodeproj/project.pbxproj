@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84150AD0285DD1F800E1309D /* BookNewAddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84150ACF285DD1F800E1309D /* BookNewAddTableViewController.swift */; };
 		849B7E812858BD09000F89AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B7E802858BD09000F89AD /* AppDelegate.swift */; };
 		849B7E832858BD09000F89AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B7E822858BD09000F89AD /* SceneDelegate.swift */; };
 		849B7E852858BD09000F89AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B7E842858BD09000F89AD /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84150ACF285DD1F800E1309D /* BookNewAddTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookNewAddTableViewController.swift; sourceTree = "<group>"; };
 		849B7E7D2858BD09000F89AD /* List of Books.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "List of Books.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		849B7E802858BD09000F89AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		849B7E822858BD09000F89AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,10 +67,11 @@
 				849B7E802858BD09000F89AD /* AppDelegate.swift */,
 				849B7E822858BD09000F89AD /* SceneDelegate.swift */,
 				849B7E842858BD09000F89AD /* ViewController.swift */,
-				849B7E862858BD09000F89AD /* Main.storyboard */,
 				849B7E982858E590000F89AD /* Model.swift */,
-				849B7E942858CD95000F89AD /* ListBookTableViewController.swift */,
 				849B7E962858D416000F89AD /* ListBookTableViewCell.swift */,
+				849B7E942858CD95000F89AD /* ListBookTableViewController.swift */,
+				84150ACF285DD1F800E1309D /* BookNewAddTableViewController.swift */,
+				849B7E862858BD09000F89AD /* Main.storyboard */,
 				849B7E892858BD0A000F89AD /* Assets.xcassets */,
 				849B7E8B2858BD0A000F89AD /* LaunchScreen.storyboard */,
 				849B7E8E2858BD0A000F89AD /* Info.plist */,
@@ -150,6 +153,7 @@
 				849B7E852858BD09000F89AD /* ViewController.swift in Sources */,
 				849B7E812858BD09000F89AD /* AppDelegate.swift in Sources */,
 				849B7E952858CD95000F89AD /* ListBookTableViewController.swift in Sources */,
+				84150AD0285DD1F800E1309D /* BookNewAddTableViewController.swift in Sources */,
 				849B7E992858E590000F89AD /* Model.swift in Sources */,
 				849B7E832858BD09000F89AD /* SceneDelegate.swift in Sources */,
 				849B7E972858D416000F89AD /* ListBookTableViewCell.swift in Sources */,

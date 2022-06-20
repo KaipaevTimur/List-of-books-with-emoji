@@ -15,17 +15,43 @@ class ListBookTableViewController: UITableViewController {
         Book(emojiBook: "🤡🎈😱", name: "IT", author: "Stephen King", isfavourite: false),
         Book(emojiBook: "👱🏻‍♀️🚂☠️", name: "Anna Karenina", author: "Lev Tolstoy", isfavourite: false)
     ]
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        
         self.title = "List of Books"
         self.navigationItem.leftBarButtonItem = self.editButtonItem
 
+    }
+    
+    @IBAction func unwindSegue(segue: UIStoryboardSegue) {
+        guard segue.identifier == "saveSegue" else { return }
+        let sourceViewController = segue.source as! BookNewAddTableViewController
+        let book = sourceViewController.book
+        
+        if
+            let selectedIndexPath = tableView.indexPathForSelectedRow {
+            objects[selectedIndexPath.row] = book
+            tableView.reloadRows(at: [selectedIndexPath], with: .fade)
+            
+        } else {
+            
+            let newIndexPath = IndexPath(row: objects.count, section: 0)
+            objects.append(book)
+            tableView.insertRows(at: [newIndexPath], with: .fade)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        guard segue.identifier == "editBook" else { return }
+        let indexPath = tableView.indexPathForSelectedRow!
+        let book = objects[indexPath.row]
+        
+        let navigationViewController = segue.destination as! UINavigationController
+        let newBookViewController = navigationViewController.topViewController as! BookNewAddTableViewController
+        newBookViewController.book = book
+        newBookViewController.title = "Edit"
     }
 
     // MARK: - Table view data source
@@ -71,6 +97,8 @@ class ListBookTableViewController: UITableViewController {
         objects.insert(movedEmoji, at: destinationIndexPath.row)
         tableView.reloadData()
     }
+    
+    // MARK: - Leading Swipe Actions
     
     override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let done = doneAction(at: indexPath)
